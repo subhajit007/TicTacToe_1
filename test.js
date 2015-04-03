@@ -60,7 +60,7 @@ function clickBtn(btn){
     winner();
     } else
             {
-    document.getElementById(btn).value= "0";
+    document.getElementById(btn).value= "O";
     document.getElementById(btn).disabled="disabled";
     player -=1;
     winner();
@@ -68,8 +68,7 @@ function clickBtn(btn){
 }
 
 function winner(){
-    if (
-        document.getElementById("btn1").value =="X" &&
+    if (document.getElementById("btn1").value =="X" &&
         document.getElementById("btn2").value =="X" &&
         document.getElementById("btn3").value =="X" ||
         document.getElementById("btn4").value =="X" &&
@@ -93,12 +92,11 @@ function winner(){
         document.getElementById("btn3").value =="X" &&
         document.getElementById("btn5").value =="X" &&
         document.getElementById("btn7").value =="X"
-){
-        document.getElementById('xyz').play(); //one sound clip is playing when alert triggers
-        alert("X you are the winner Your account has been Credited ");
-        reset(); //game is going to reset for a new session
-
-    } else if(
+        ){
+            document.getElementById('xyz').play(); //one sound clip is playing when alert triggers
+            alert("X you are the winner Your account has been Credited ");
+            reset(); //game is going to reset for a new session
+        } else if(
         document.getElementById("btn1").value =="O" &&
         document.getElementById("btn2").value =="O" &&
         document.getElementById("btn3").value =="O" ||
@@ -123,13 +121,11 @@ function winner(){
         document.getElementById("btn3").value =="O" &&
         document.getElementById("btn5").value =="O" &&
         document.getElementById("btn7").value =="O"
-        )
-
-        {
+        ){
         document.getElementById('xyz').play(); //one sound clip is playing when alert triggers
         alert("O you are the winner Your account has been Credited ");
         reset(); //game is going to reset for a new session
-}
+        }
 }
 
  function reset(){
