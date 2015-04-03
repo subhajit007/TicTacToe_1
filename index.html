@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to Subhajit's TicTacToe</title>
+
+	<link rel="stylesheet" type="text/css" href="test.css">
+      <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="test.js"></script>
+
+</head>
+<body>
+
+<!-- //bk is the background video id which will run in auto loop -->
+<div id = "bk">
+
+		<video autoplay loop >
+            <source src="usd_slow.mp4" type="video/mp4">
+		</video>
+</div>
+
+<!-- Game screen title  -->
+
+<h1> Subhajit's TicTacToe</h1>
+
+
+  <!-- <audio control autoplay>
+  <source src="bk.mp3" type="audio/mpeg">
+  </audio> -->
+
+
+ <!-- Creating main box and other 9 boxes. 3 in each row with the onclick function it will print either X or 0-->
+<div>
+
+<div id="box">
+
+      	<input type ="button" class="btn" id="btn1" onclick="clickBtn('btn1')" value=' '/>
+      	<input type ="button" class="btn" id="btn2" onclick="clickBtn('btn2')" value=' '/>
+      	<input type ="button" class="btn" id="btn3" onclick="clickBtn('btn3')" value=' '/>
+
+            <input type ="button" class="btn" id="btn4" onclick="clickBtn('btn4')" value=' '/>
+            <input type ="button" class="btn" id="btn5" onclick="clickBtn('btn5')" value=' '/>
+            <input type ="button" class="btn" id="btn6" onclick="clickBtn('btn6')" value=' '/>
+
+            <input type ="button" class="btn" id="btn7" onclick="clickBtn('btn7')" value=' '/>
+            <input type ="button" class="btn" id="btn8" onclick="clickBtn('btn8')" value=' '/>
+            <input type ="button" class="btn" id="btn9" onclick="clickBtn('btn9')" value=' '/>
+
+
+</div>
+</div>
+<input type ="button" id ="btnReset" onclick= "reset()" value="Reset Game"/>
+
+<!-- javascript alert sound is preloading here -->
+
+<audio id="xyz" src="winalert.mp3" preload="auto"></audio>
+
+
+
+
+
+
+
+
+</body>
+</html>
